@@ -1,4 +1,7 @@
 # Valentin-Beaufays.github.io
+
+This repository is hosted as github-page [here](https://valentin-beaufays.github.io/ "https://valentin-beaufays.github.io/").
+
 This is my personal page repository. I build it to introduce me and expose my work to my client.
 I think it as a one page website with four section: 
 - header
