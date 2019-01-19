@@ -1,3 +1,8 @@
+//fonts
+@font-face {
+    font-family: 'VT323';
+    src: url('../font/VT323-Regular.ttf');
+  }
 //colors
 $FacebookBlue: #4267B2;
 $twitterBlue:#1DA1F2;
@@ -5,6 +10,7 @@ $linkedinBlue: #0077B5;
 $githubBlack:#24292E;
 $navbarColor: rgba(43, 42, 42, 0);
 $fontColor: white;
+$mainColor: #40B9FF;
 html,body{
     margin:0;
     padding:0;
@@ -55,7 +61,7 @@ h1{
     text-align: center;
     vertical-align: middle;
     font-size: 3em;
-    color: rgb(64, 185, 255);
+    color: $mainColor;
     font-family: 'VT323', monospace;
 }
 @media only screen and (min-width:980px){
