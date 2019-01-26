@@ -8,9 +8,13 @@ $FacebookBlue: #4267B2;
 $twitterBlue:#1DA1F2;
 $linkedinBlue: #0077B5;
 $githubBlack:#24292E;
-$navbarColor: rgba(43, 42, 42, 0);
-$fontColor: white;
-$mainColor: #40B9FF;
+$mainColor: rgba(237, 106, 90, 1);
+$backcolor: rgba(252, 250, 249, 1);
+$fontColor: rgba(51, 51, 51, 1);
+$sectionTitleColor: rgba(54, 201, 198, 1);
+
+$navbarColor:black;
+
 html,body{
     margin:0;
     padding:0;
@@ -54,7 +58,7 @@ body{
     align-items: center;
     background-color: rgba(31, 28, 28, 0.452);
 }
-.center{
+.centerHeader{
     width:75%;
 }
 h1{
@@ -63,14 +67,6 @@ h1{
     font-size: 3em;
     color: $mainColor;
     font-family: 'VT323', monospace;
-}
-@media only screen and (min-width:980px){
-    .center{
-        width:50%;
-    }
-    h1{
-        font-size: 5em;
-    }
 }
 .name{
     margin-bottom: 15%;
@@ -82,10 +78,10 @@ h1{
     flex-direction: row;
     justify-content: space-around;
 }
+//socialBtn
 .socialButton{
     width:50px;
     height: 50px;
-    background-color: white;
     border-radius: 50%;
     a{
         display: flex;
@@ -94,7 +90,7 @@ h1{
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        color: $fontColor;
+        color: $backcolor;
     }
 }
 
@@ -110,25 +106,62 @@ h1{
 .githubButton{
     background-color: $githubBlack;
 }
-
-//presentation
-.presentation{
-    overflow: hidden;
-    background-color: white;
-}
+//section
 .sectionTitle{
     display: flex;
     justify-content: center;
+    position: relative;
+    background-color:$sectionTitleColor;
+    color:$mainColor;
 }
 
-.presentationText{
-    
-    display: flex;
-    justify-content: center;
-    p{
-        width:75%;
-    }
+//presentation
+.experiences{
+    overflow: hidden;
+    background-color: $backcolor;
 }
+
+.experiencesContent{
+    display: flex;
+    flex-direction: column;
+}
+
+//card
+
+.itemCard{
+    background-color: $fontColor;
+    color:$backcolor;
+    margin:30px;
+    padding:30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+//debug
 .debug{
     border:red solid 1px;
+}
+
+//responsive
+@media only screen and (min-width:980px){
+    //header
+    .centerHeader{
+        width:50%;
+    }
+    h1{
+        font-size: 6em;
+    }
+    .socialButton{
+        width: 70px;
+        height: 70px;
+        a{
+            font-size: 2em;
+        }
+    }
+    .experiences{
+        height: 100%;
+    }
+    //itemCard
+
 }
