@@ -159,8 +159,12 @@ h1{
             font-size: 2em;
         }
     }
-    .experiences{
-        height: 100%;
+    .experiencesContent{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .itemCard{
+        width:25%;
     }
     //itemCard
 

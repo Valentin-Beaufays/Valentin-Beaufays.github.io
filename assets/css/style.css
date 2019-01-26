@@ -159,5 +159,13 @@ h1 {
     height: 70px; }
     .socialButton a {
       font-size: 2em; }
-  .experiences {
-    height: 100%; } }
+  .experiencesContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .itemCard {
+    width: 25%; } }
